@@ -1,0 +1,31 @@
+.section-features {
+  width: 90vw;
+  margin: auto;
+  .long-copy {
+    margin-bottom: 30px;
+  }
+}
+.features-intro {
+  flex-wrap: wrap;
+}
+
+.copy {
+  @include flex(space-around, flex-start, row);
+  flex: 1 1 40rem;
+  h3 {
+    text-align: center;
+  }
+  h3:before {
+    display: block;
+    height: 0.2rem;
+    background-color: $color;
+    content: " ";
+    width: 15vw;
+    margin: 1rem auto;
+  }
+  div {
+    @include flex(space-around, center, column);
+    padding: 2rem 0rem;
+    margin: 0rem 1rem 0rem 0rem;
+  }
+}

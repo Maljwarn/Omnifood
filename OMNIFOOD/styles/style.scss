@@ -1,0 +1,23 @@
+$color: #e57e22;
+$second-color: #944b0c;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "global";
+@import "intro";
+@import "features";
+@import "favorites";
+@import "works";
+@import "cities";
+@import "testimonials";
+@import "plan";
+@import "contact";
+@import "footer";
+@import "queries";
+@media screen and (max-width: 1332px) {
+}

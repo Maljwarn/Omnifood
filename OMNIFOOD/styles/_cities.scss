@@ -1,0 +1,13 @@
+.cities {
+  @include flex(space-around, flex-start, row);
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+}
+.city {
+  margin: 15px;
+}

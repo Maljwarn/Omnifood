@@ -1,0 +1,45 @@
+.section-form {
+  width: 90vw;
+  margin: 0 auto;
+  @include flex(flex-start, center, column);
+  flex-wrap: wrap;
+}
+.contact-form {
+  width: 90vw;
+  margin: 0 auto;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+.contact-flex {
+  @include flex(flex-start, center, row);
+  margin: 4% 0;
+}
+.line {
+  width: 30%;
+}
+.input {
+  width: 70%;
+}
+.send {
+  width: 70%;
+  position: absolute;
+  right: -10px;
+}
+*:focus {
+  outline: none;
+}

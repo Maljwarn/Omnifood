@@ -1,0 +1,252 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .hero-text {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .step-section {
+    margin-bottom: 40px;
+  }
+  .step-section:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .app-screen {
+    width: 50%;
+  }
+
+  .icon-small {
+    width: 17px;
+    margin-right: 5px;
+  }
+
+  .city-feature {
+    font-size: 90%;
+  }
+
+  .plan-flex {
+    width: 90vw;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .plan-box {
+    width: 60%;
+    text-align: center;
+    ul {
+      margin-left: 30%;
+      text-align: start;
+    }
+  }
+
+  .plan-price {
+    font-size: 250%;
+  }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 30px 0;
+  }
+
+  .hero-text {
+    padding: 0 4%;
+  }
+
+  .main-nav {
+    display: none;
+    margin-top: 30px;
+    margin-right: 20%;
+  }
+  .mobile-nav-icon {
+    display: inline-block;
+    padding-right: 2vw;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+  .main-nav li a:hover {
+    color: $color;
+    border-bottom: 2px solid $color;
+  }
+
+  .sticky .main-nav {
+    margin-top: 10px;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 10px 0;
+  }
+  .sticky .mobile-nav-icon {
+    margin-top: 10px;
+  }
+  .sticky .mobile-nav-icon i {
+    color: #555;
+  }
+
+  h1 {
+    font-size: 180%;
+  }
+  h2 {
+    font-size: 150%;
+  }
+
+  .long-copy {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .app-screen {
+    width: 40%;
+  }
+
+  .step-section div {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    padding: 4px;
+    font-size: 120%;
+  }
+
+  .step-section {
+    margin-bottom: 20px;
+  }
+  .step-section :last-of-type {
+    margin-bottom: 20px;
+  }
+  .plan-flex {
+    width: 90vw;
+    margin: auto;
+    @include flex(center, center, column);
+  }
+  .plan-box {
+    width: 90%;
+  }
+  .section-form {
+    margin-bottom: 20px;
+  }
+  .contact-flex {
+    margin-bottom: 5px;
+  }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+  .copy {
+    flex-direction: column;
+
+    div {
+      justify-self: flex-start;
+      align-items: flex-start;
+      padding: 0px;
+      padding-bottom: 10px;
+    }
+    h3:before {
+      width: 15vw;
+      margin: 0px 0px 10px 0px;
+    }
+  }
+  .cities {
+    flex-direction: column;
+  }
+  .city {
+    justify-content: center;
+    width: 80vw;
+    margin: 10px auto;
+
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+
+  .works-intro {
+    max-width: 50vw;
+    margin: auto;
+    padding: 20px 0rem;
+  }
+  .steps {
+    width: 90vw;
+    margin: auto;
+    @include flex(center, center, column);
+  }
+  .app-screen {
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+  .works-step {
+    width: 90%;
+    margin: auto;
+  }
+  .testimonials {
+    @include flex(center, center, column);
+  }
+
+  .contact-flex {
+    @include flex(flex-start, flex-start, column);
+  }
+  .line {
+    width: 50%;
+    margin-bottom: 5px;
+  }
+  .input {
+    width: 100%;
+  }
+  .send {
+    position: relative;
+    right: 0px;
+  }
+  .footer-flex {
+    flex-direction: column;
+  }
+  .footer-nav {
+    margin: 10px auto;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .btn-flex {
+    @include flex(space-around, center, column);
+  }
+  .footer-nav {
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+}
